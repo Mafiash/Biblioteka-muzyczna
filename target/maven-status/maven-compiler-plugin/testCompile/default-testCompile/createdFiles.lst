@@ -1,0 +1,10 @@
+com\mycompany\lab2\tests\SongParamTest.class
+com\mycompany\lab2\tests\SongPredicateTest.class
+com\mycompany\lab2\tests\SongSummaryTest.class
+com\mycompany\lab2\tests\SongPredicateParamTest.class
+com\mycompany\lab2\tests\MusicLibraryParamTest.class
+com\mycompany\lab2\tests\PlaylistTest.class
+com\mycompany\lab2\tests\SongSummaryParamTest.class
+com\mycompany\lab2\tests\MusicLibraryTest.class
+com\mycompany\lab2\tests\PlaylistParamTest.class
+com\mycompany\lab2\tests\SongTest.class

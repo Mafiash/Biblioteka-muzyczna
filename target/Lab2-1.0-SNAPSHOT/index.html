@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Witaj w Bibliotece Muzycznej!</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 920px; margin: 2rem auto; line-height: 1.5; }
+    header, section { margin-bottom: 2rem; }
+    h1 { margin-top: 0; }
+    form { margin: 0.5rem 0; }
+    label { display: inline-block; min-width: 90px; }
+    input[type="text"], input[type="number"] { padding: 0.25rem 0.4rem; }
+    .nav a { margin-right: 0.75rem; }
+    .hint { color: #666; font-size: 0.95em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Biblioteka Muzyczna</h1>
+    <p class="hint">To jest strona startowa. Użyj linków i formularzy poniżej. Po naciśnięciu linku zostaniesz przeniesiony do strony z edycją.
+    <nav class="nav">
+      <a href="music?action=all">Wszystkie piosenki</a>
+      <a href="music?action=favorites">Ulubione</a>
+      <a href="music?action=playlists">Playlisty</a>
+      <a href="music?action=summary">Podsumowanie</a>
+      <a href="history">Historia</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Dodaj piosenkę</h2>
+    <form method="post" action="music">
+      <input type="hidden" name="op" value="addSong" />
+      <p>
+        <label for="title">Tytuł</label>
+        <input id="title" name="title" required />
+      </p>
+      <p>
+        <label for="artist">Wykonawca</label>
+        <input id="artist" name="artist" required />
+      </p>
+      <p>
+        <label for="year">Rok</label>
+        <input id="year" name="year" type="number" required />
+      </p>
+      <p>
+        <button type="submit">Dodaj piosenkę</button>
+      </p>
+    </form>
+  </section>
+
+  <section>
+    <h2>Stwórz playlistę</h2>
+    <form method="post" action="music">
+      <input type="hidden" name="op" value="createPlaylist" />
+      <p>
+        <label for="playlistName">Nazwa</label>
+        <input id="playlistName" name="playlistName" required />
+      </p>
+      <p>
+        <button type="submit">Stwórz playlistę</button>
+      </p>
+    </form>
+  </section>
+
+</body>
+</html>
